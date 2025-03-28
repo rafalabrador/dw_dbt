@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: samssubs_landing
+    database: rafaellabrador
+    schema: samssubs_source_sams_subs
+    tables:
+      - name: customer
+      - name: employee
+      - name: orderdetails
+      - name: '"ORDER"' 
+      - name: product
+      - name: store
+      - name: sandwich
+
+  - name: samssubs_web_landing
+    database: rafaellabrador
+    schema: samssubs_source
+    tables:
+      - name: web_traffic_events
